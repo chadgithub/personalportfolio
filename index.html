@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chad's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="dist/vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/index.css">
+	<script type="text/javascript" src="app/lib/angular.min.js"></script>
+	<script type="text/javascript" src="app/lib/angular-route.min.js"></script>
+	<script type="text/javascript" src="app/lib/jquery-3.2.0.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="{{bg}}" data-ng-app="portfolio" data-ng-controller="baseController">
+<div class="container-fluid">
+	<div data-ng-include="'app/components/splash/splash.html'"></div>
+	<ng-view></ng-view>
+</div>
+</body>
+<script type="text/javascript" src="app/index.js"></script>
+<script type="text/javascript" src="app/app.routes.js"></script>
+<script type="text/javascript" src="app/base.controller.js"></script>
+
+<script type="text/javascript" src="app/components/contact_me/contact_me.controller.js"></script>
+<script type="text/javascript" src="app/components/more/more.controller.js"></script>
+<script type="text/javascript" src="app/components/open_source/open_source.controller.js"></script>
+</html>

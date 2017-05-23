@@ -1,0 +1,45 @@
+@import 'fonts.scss';
+@import 'mixins.scss';
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+
+*{
+	font-family:robotoLight;
+}
+
+html{
+	overflow-x: hidden;
+}
+
+body{
+	background-color: #111;
+	background-attachment: fixed;
+	background-position: center;
+	&.lets-talk{ background-image: url(../img/congruent_outline.png); }
+	&.more{ background-image: url(../img/ricepaper2.png); }
+	&.open-source{ background-color: white; }
+
+	a{
+		color: initial !important;
+    	text-decoration: none !important;
+	}
+	a:hover{
+		color: initial !important;
+    	text-decoration: none !important;	
+	}
+
+	@import 'splash.scss';
+	@import 'curtain.scss';
+	@import 'contact-me.scss';
+	@import 'more.scss';
+	@import 'loading.scss';
+	@import 'open-source.scss';
+	@import 'article.scss';
+}
+
+@import 'media-query.scss';

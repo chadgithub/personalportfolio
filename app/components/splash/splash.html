@@ -1,0 +1,76 @@
+<div class="splash {{fullscreenMode}}">
+		<div class="head">
+			<div class="dp"></div>
+		</div>
+		<div class="text">
+			<div class="text-center">
+				<div class="name"><a data-ng-click="curtainFold(false)">Chad Tamanio</a></div>
+				<div class="subtitle">
+					<div class="">
+						<span class="text">
+							<a data-ng-click="curtainFold(true);changeBG('lets-talk');turnBars('white');" href="#/open-source">OPEN SOURCE ADVOCATE</a>
+						</span>
+						<span class="text">COMPUTER SCIENTIST</span>
+					</div>
+					<div class="">
+						<span class="text">SOFTWARE ENGINEER</span>
+						<span class="text">FULLSTACK DEVELOPER</span>
+					</div>
+					<div class="">
+						<span class="text">GRAPHIC DESIGNER</span>
+					</div>
+				</div>
+				<div class="links">
+					<a data-ng-click="curtainFold(true);changeBG('lets-talk');turnBars('white');" href="#/lets-talk">
+						<div>
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="text">Let's Talk</span>
+						</div>
+					</a>
+					<a data-ng-click="curtainFold(true);changeBG('open-source');turnBars('black');" href="#/more">
+						<div>
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="text">Case Studies</span>
+						</div>
+					</a>
+					<a data-ng-click="curtainFold(true);changeBG('more');turnBars('black');" href="#/more">
+						<div>
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="text">More</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="loading {{loading}}">
+			<div class="circle"></div>
+			<div class="circle-small"></div>
+			<div class="circle-big"></div>
+		</div>
+</div>
+<div class="backer {{fullscreenMode}}">
+	<a href="#/" data-ng-click="curtainFold(false)">
+		<span class="home {{black}}">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="text">HOME</span>
+		</span>
+	</a>
+</div>
+<div class="curtain {{curtainStatus}}">
+	<span>
+		<a data-ng-click="curtainFold(true);changeBG('lets-talk');turnBars('white');" href="#/open-source">
+			OPEN SOURCE ADVOCATE
+		</a>
+	</span>
+	<span>COMPUTER SCIENTIST</span>
+	<span>SOFTWARE ENGINEER</span>
+	<span>FULLSTACK DEVELOPER</span>
+ 	<span>GRAPHIC DESIGNER</span>
+</div>
